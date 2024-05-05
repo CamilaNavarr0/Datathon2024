@@ -1,0 +1,9 @@
+uvicorn[standard]
+fastapi
+numpy
+python-multipart
+pandas
+prophet
+holidays
+catboost
+numpy
