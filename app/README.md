@@ -1,4 +1,4 @@
-# Prophet Number Prediction API
+# Viva API
 
 Author: InfinityLabs Team
 
