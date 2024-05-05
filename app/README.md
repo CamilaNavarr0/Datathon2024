@@ -1,10 +1,9 @@
-# MNIST Number Prediction API
+# Prophet Number Prediction API
 
 Author: InfinityLabs Team
 
 This API provides an interface to predict the number of passengers that will board a flight in the future. The API uses a pre-trained model to predict the number of passengers that will board a flight in the future. The model is trained on the dataset provided by Viva and uses a prophet model to predict the number of passengers that will board a flight in the future.
 
-The model training file is included in the model_training.py folder but is not necessary to run that code. The model is already trained and saved in the file 'mnist-logreg-model.pkl'.
 
 ## Table of Contents
 
