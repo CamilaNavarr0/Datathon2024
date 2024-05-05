@@ -1,0 +1,66 @@
+---
+title: "vivaChallenge"
+output: html_document
+date: "2023-05-07"
+---
+
+```{r setup, include=FALSE}
+library("readxl")
+library(openair)
+library(dplyr)
+```
+
+```{r}
+data <-read.csv("data/data_2023_modelo.csv", header=TRUE)
+```
+
+```{r}
+data
+```
+
+
+```{r}
+
+
+data$STD <- as.POSIXct(data$STD, format="%Y-%m-%d %H:%M:%S")
+colnames(data)[colnames(data) == "STD"] ="date"
+data$Passengers <- as.numeric(data$Passengers)
+data$Bookings <- as.numeric(data$Bookings)
+
+```
+```{r}
+data$Bookings <- as.numeric(data$Bookings)
+
+```
+
+
+```{r}
+data
+```
+
+
+
+```{r}
+calendarPlot(data, pollutant = 'Passengers' )
+```
+```{r}
+timeVariation(data, pollutant = 'Passengers' )
+```
+
+```{r}
+calendarPlot(data, pollutant = 'Bookings' )
+
+```
+
+```{r}
+timeVariation(data, pollutant = 'Bookings' )
+
+```
+
+
+```{r}
+summaryPlot(data, pollutant = 'Passengers' )
+```
+
+
+
